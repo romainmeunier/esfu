@@ -10,9 +10,12 @@ class App extends Component {
         url="http://eslog-dc1-nl0.prod.entertainment.dc1.nl.vpgrp.io:9200"
 				// other components will go here.
         >
-				<div>
-					Hello ReactiveSearch!
-				</div>
+        <CategorySearch
+	componentId="searchbox"
+	dataField="jobUrl"
+	categoryField="jobUrl"
+	placeholder="Search for cars"
+/>
 			</ReactiveBase>
 		);
 	}
